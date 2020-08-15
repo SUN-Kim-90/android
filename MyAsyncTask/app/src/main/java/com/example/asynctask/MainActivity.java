@@ -53,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
                     Thread.sleep(1000);
                 }catch (Exception e){
 
+                }finally {
+
                 }
             }
 
