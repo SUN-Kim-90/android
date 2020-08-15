@@ -82,14 +82,11 @@ public class MainActivity extends AppCompatActivity {
             //sock.getInputStream()->받는 통로, new ObjectInputStream(sock.getInputStream())받는 통로에 연결된 받는 객체를생성
             ObjectInputStream objectInputStream = new ObjectInputStream(sock.getInputStream());
             //readObject()-> 객체를 받는 함수.
-            String input = (String) objectInputStream.readObject();
+            String input = String.valueOf(objectInputStream.readObject());
             sock.close();
 
         } catch (IOException e) {
             e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
     }
 
 
