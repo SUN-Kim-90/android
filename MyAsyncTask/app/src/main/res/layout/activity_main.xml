@@ -8,10 +8,11 @@
     tools:context=".MainActivity" >
 
     <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="50dp"
+        android:progressTint="#B321CC" />
 
     <Button
         android:id="@+id/button"
@@ -24,4 +25,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="취소" />
+
 </LinearLayout>
